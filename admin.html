@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Brauerei Rappenstein</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-beer">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-cup-hot"></i> Brauerei Rappenstein
+            </a>
+            <span class="navbar-text ms-auto">
+                <i class="bi bi-shield-lock text-warning"></i> Admin-Bereich
+            </span>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-beer mb-4">
+                    <i class="bi bi-gear-fill me-2"></i>
+                    Admin-Panel - Bildverwaltung
+                </h1>
+                <p class="lead">Verwalten Sie die Bilder für Ihre Website</p>
+            </div>
+        </div>
+
+        <!-- Image Categories Tabs -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="categoryTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="beers-tab" data-bs-toggle="tab" data-bs-target="#beers" type="button" role="tab">
+                            <i class="bi bi-cup-hot me-2"></i>Biere
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab">
+                            <i class="bi bi-images me-2"></i>Galerie
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="schankwagen-tab" data-bs-toggle="tab" data-bs-target="#schankwagen" type="button" role="tab">
+                            <i class="bi bi-truck me-2"></i>Schankwagen
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="brewery-tab" data-bs-toggle="tab" data-bs-target="#brewery" type="button" role="tab">
+                            <i class="bi bi-building me-2"></i>Brauerei
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="team-tab" data-bs-toggle="tab" data-bs-target="#team" type="button" role="tab">
+                            <i class="bi bi-people me-2"></i>Team
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="tab-content" id="categoryTabContent">
+            <!-- Biere Tab -->
+            <div class="tab-pane fade show active" id="beers" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="text-beer mb-3">Bier-Bilder hochladen</h3>
+                        <div class="image-upload-area mb-4" data-category="beers">
+                            <i class="bi bi-cloud-upload display-4 text-beer mb-3"></i>
+                            <h5>Bilder hier ablegen oder klicken zum Auswählen</h5>
+                            <p class="text-muted">Unterstützte Formate: JPG, PNG, WebP (max. 5MB pro Bild)</p>
+                        </div>
+                        
+                        <div class="row g-3" id="beer-image-grid">
+                            <!-- Existing beer images will be loaded here -->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Bier-Kategorien</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Helles
+                                        <span class="badge bg-beer rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        IPA
+                                        <span class="badge bg-beer rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Weizen
+                                        <span class="badge bg-beer rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Dunkel
+                                        <span class="badge bg-beer rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Saisonbier
+                                        <span class="badge bg-beer rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        6er Pack
+                                        <span class="badge bg-beer rounded-pill">1</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galerie Tab -->
+            <div class="tab-pane fade" id="gallery" role="tabpanel">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-beer mb-3">Galerie-Bilder hochladen</h3>
+                        <div class="image-upload-area mb-4" data-category="gallery">
+                            <i class="bi bi-images display-4 text-beer mb-3"></i>
+                            <h5>Galerie-Bilder hier ablegen oder klicken zum Auswählen</h5>
+                            <p class="text-muted">Zeigen Sie Einblicke in Ihre Brauerei und den Brauprozess</p>
+                        </div>
+                        
+                        <div class="row g-3" id="gallery-image-grid">
+                            <!-- Gallery images will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schankwagen Tab -->
+            <div class="tab-pane fade" id="schankwagen" role="tabpanel">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-beer mb-3">Schankwagen-Bilder hochladen</h3>
+                        <div class="image-upload-area mb-4" data-category="schankwagen">
+                            <i class="bi bi-truck display-4 text-beer mb-3"></i>
+                            <h5>Schankwagen-Bilder hier ablegen oder klicken zum Auswählen</h5>
+                            <p class="text-muted">Zeigen Sie Ihren mobilen Schankwagen in Aktion</p>
+                        </div>
+                        
+                        <div class="row g-3" id="schankwagen-image-grid">
+                            <!-- Schankwagen images will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brauerei Tab -->
+            <div class="tab-pane fade" id="brewery" role="tabpanel">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-beer mb-3">Brauerei-Bilder hochladen</h3>
+                        <div class="image-upload-area mb-4" data-category="brewery">
+                            <i class="bi bi-building display-4 text-beer mb-3"></i>
+                            <h5>Brauerei-Bilder hier ablegen oder klicken zum Auswählen</h5>
+                            <p class="text-muted">Innen- und Außenansichten Ihrer Brauerei</p>
+                        </div>
+                        
+                        <div class="row g-3" id="brewery-image-grid">
+                            <!-- Brewery images will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Tab -->
+            <div class="tab-pane fade" id="team" role="tabpanel">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-beer mb-3">Team-Bilder hochladen</h3>
+                        <div class="image-upload-area mb-4" data-category="team">
+                            <i class="bi bi-people display-4 text-beer mb-3"></i>
+                            <h5>Team-Bilder hier ablegen oder klicken zum Auswählen</h5>
+                            <p class="text-muted">Fotos vom Brauerei-Team und bei der Arbeit</p>
+                        </div>
+                        
+                        <div class="row g-3" id="team-image-grid">
+                            <!-- Team images will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Progress -->
+        <div class="row mt-4" id="upload-progress-container" style="display: none;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Upload-Fortschritt</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-beer" 
+                                 role="progressbar" id="upload-progress-bar" style="width: 0%"></div>
+                        </div>
+                        <div id="upload-status">Vorbereitung...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="d-flex gap-3">
+                    <button type="button" class="btn btn-beer" onclick="saveAllImages()">
+                        <i class="bi bi-save me-2"></i>Alle Änderungen speichern
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="previewWebsite()">
+                        <i class="bi bi-eye me-2"></i>Website-Vorschau
+                    </button>
+                    <button type="button" class="btn btn-outline-danger" onclick="clearAllImages()">
+                        <i class="bi bi-trash me-2"></i>Alle löschen
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card bg-light">
+                    <div class="card-header">
+                        <h5 class="mb-0"><i class="bi bi-info-circle me-2"></i>Anleitung</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Bildverwaltung:</h6>
+                        <ul>
+                            <li>Wählen Sie die gewünschte Kategorie aus den Tabs</li>
+                            <li>Ziehen Sie Bilder in den Upload-Bereich oder klicken Sie zum Auswählen</li>
+                            <li>Bilder werden automatisch auf optimale Größe angepasst</li>
+                            <li>Verwenden Sie aussagekräftige Dateinamen für bessere Organisation</li>
+                        </ul>
+                        
+                        <h6>Empfohlene Bildgrößen:</h6>
+                        <ul>
+                            <li><strong>Bier-Bilder:</strong> 400x400px (quadratisch)</li>
+                            <li><strong>Galerie:</strong> 800x600px (Querformat)</li>
+                            <li><strong>Schankwagen:</strong> 800x600px (Querformat)</li>
+                            <li><strong>Brauerei:</strong> 800x600px (Querformat)</li>
+                            <li><strong>Team:</strong> 600x400px (Querformat)</li>
+                        </ul>
+                        
+                        <div class="alert alert-warning mt-3">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            <strong>Wichtig:</strong> Stellen Sie sicher, dass Sie die Rechte an allen hochgeladenen Bildern besitzen.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        // Admin-specific functions
+        function saveAllImages() {
+            showNotification('Alle Änderungen wurden gespeichert!', 'success');
+        }
+        
+        function previewWebsite() {
+            window.open('index.html', '_blank');
+        }
+        
+        function clearAllImages() {
+            if (confirm('Möchten Sie wirklich alle Bilder löschen? Diese Aktion kann nicht rückgängig gemacht werden.')) {
+                // Clear all image containers
+                document.querySelectorAll('[id$="-image-grid"]').forEach(grid => {
+                    grid.innerHTML = '';
+                });
+                showNotification('Alle Bilder wurden gelöscht.', 'info');
+            }
+        }
+        
+        // Load existing images on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadExistingImages();
+        });
+        
+        function loadExistingImages() {
+            // This would typically load from server/database
+            // For now, we'll simulate some existing images
+            console.log('Loading existing images...');
+        }
+    </script>
+</body>
+</html> 

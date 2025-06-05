@@ -1,0 +1,10 @@
+# This file ensures that the images directory structure is preserved in version control
+# You can delete this file once you have added actual images to the subdirectories
+
+# Directory structure:
+# images/
+# ├── beers/          - Product photos of different beer types
+# ├── gallery/        - General brewery and process photos
+# ├── schankwagen/    - Mobile beer tap wagon photos
+# ├── brewery/        - Interior and exterior brewery photos
+# └── team/           - Team and staff photos 
