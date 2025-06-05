@@ -1,16 +1,38 @@
 /* Brauerei Rappenstein - Custom Styles */
 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
 :root {
-    --beer-brown: #8B4513;
-    --beer-light-brown: #A0522D;
-    --beer-gold: #D4AF37;
-    --beer-cream: #f8f9fa;
-    --beer-dark: #654321;
+    --primary-dark: #2c2c2c;
+    --primary-light: #4a4a4a;
+    --accent-gold: #D4AF37;
+    --light-gray: #f8f9fa;
+    --medium-gray: #6c757d;
+    --dark-gray: #343a40;
+    --white: #ffffff;
+    --black: #000000;
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(139, 69, 19, 0.7), rgba(139, 69, 19, 0.7)), url('../images/brewery-background.jpg');
+    background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(44, 44, 44, 0.8)), url('../images/brewery-background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -22,15 +44,36 @@
 }
 
 .hero-fallback {
-    background: linear-gradient(rgba(139, 69, 19, 0.7), rgba(139, 69, 19, 0.7)), 
-                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJiZWVyUGF0dGVybiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIj4KICAgICAgPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjOEI0NTEzIiBvcGFjaXR5PSIwLjEiLz4KICAgICAgPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMyIgZmlsbD0iI0ZGRCIgb3BhY2l0eT0iMC4zIi8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ1cmwoI2JlZXJQYXR0ZXJuKSIvPgo8L3N2Zz4=');
+    background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(44, 44, 44, 0.8)), 
+                url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJtb2Rlcm5QYXR0ZXJuIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiPgogICAgICA8cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIGZpbGw9IiMyYzJjMmMiIG9wYWNpdHk9IjAuMSIvPgogICAgICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjMiLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjbW9kZXJuUGF0dGVybikiLz4KPC9zdmc+');
     background-size: 40px 40px;
+}
+
+/* Logo Styles */
+.beer-logo {
+    max-height: 120px;
+    width: auto;
+    filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.4));
+    transition: all 0.3s ease;
+}
+
+.beer-logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(2px 2px 12px rgba(0,0,0,0.6));
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
 }
 
 /* Icons and Typography */
 .beer-icon {
     font-size: 3rem;
-    color: var(--beer-gold);
+    color: var(--accent-gold);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -43,11 +86,15 @@
     transition: all 0.3s ease;
     border-radius: 15px;
     overflow: hidden;
+    border: 1px solid rgba(44, 44, 44, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .beer-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(139, 69, 19, 0.2) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(44, 44, 44, 0.25) !important;
+    border-color: var(--accent-gold);
 }
 
 .beer-card .card-img-top {
@@ -62,38 +109,41 @@
 
 /* Custom Color Classes */
 .bg-beer {
-    background-color: var(--beer-brown) !important;
+    background-color: var(--primary-dark) !important;
 }
 
 .bg-beer-light {
-    background-color: var(--beer-light-brown) !important;
+    background-color: var(--primary-light) !important;
 }
 
 .text-beer {
-    color: var(--beer-brown) !important;
+    color: var(--primary-dark) !important;
 }
 
 .btn-beer {
-    background-color: var(--beer-brown);
-    border-color: var(--beer-brown);
+    font-family: var(--font-heading);
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
     color: white;
     border-radius: 25px;
-    padding: 10px 25px;
-    font-weight: 600;
+    padding: 12px 30px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
 }
 
 .btn-beer:hover {
-    background-color: var(--beer-light-brown);
-    border-color: var(--beer-light-brown);
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+    box-shadow: 0 5px 15px rgba(44, 44, 44, 0.3);
 }
 
 /* Contact Form Styling */
 .contact-form {
-    background-color: var(--beer-cream);
+    background-color: var(--light-gray);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
@@ -105,8 +155,8 @@
 }
 
 .contact-form .form-control:focus {
-    border-color: var(--beer-brown);
-    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+    border-color: var(--primary-dark);
+    box-shadow: 0 0 0 0.2rem rgba(44, 44, 44, 0.25);
 }
 
 /* Schankwagen Section */
@@ -156,28 +206,58 @@
 
 .rampenverkauf-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(139, 69, 19, 0.15);
+    box-shadow: 0 20px 40px rgba(44, 44, 44, 0.15);
 }
 
 /* Navigation Enhancements */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(44, 44, 44, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .navbar-nav .nav-link {
-    font-weight: 500;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     margin: 0 10px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--beer-gold) !important;
+    color: var(--accent-gold) !important;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: var(--accent-gold);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 80%;
 }
 
 /* Footer Styling */
 footer {
-    background: linear-gradient(135deg, var(--beer-dark) 0%, var(--beer-brown) 100%);
+    background: linear-gradient(135deg, var(--dark-gray) 0%, var(--primary-dark) 100%);
 }
 
 /* Responsive Images */
@@ -206,7 +286,7 @@ footer {
 
 /* Image Upload Styles */
 .image-upload-area {
-    border: 2px dashed var(--beer-brown);
+    border: 2px dashed var(--primary-dark);
     border-radius: 15px;
     padding: 40px;
     text-align: center;
@@ -215,23 +295,25 @@ footer {
 }
 
 .image-upload-area:hover {
-    border-color: var(--beer-light-brown);
+    border-color: var(--primary-light);
     background-color: #f0f0f0;
 }
 
 .image-upload-area.dragover {
-    border-color: var(--beer-gold);
+    border-color: var(--accent-gold);
     background-color: rgba(212, 175, 55, 0.1);
 }
 
 /* Price Tags */
 .price-tag {
-    background: linear-gradient(135deg, var(--beer-gold) 0%, #B8860B 100%);
+    font-family: var(--font-heading);
+    background: linear-gradient(135deg, var(--accent-gold) 0%, #B8860B 100%);
     color: white;
-    padding: 5px 15px;
+    padding: 6px 18px;
     border-radius: 20px;
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
     display: inline-block;
     margin-top: 10px;
     box-shadow: 0 3px 10px rgba(212, 175, 55, 0.3);
@@ -239,10 +321,12 @@ footer {
 
 /* Badges */
 .badge-custom {
+    font-family: var(--font-heading);
     padding: 8px 12px;
     border-radius: 15px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 /* Media Queries */
@@ -256,6 +340,10 @@ footer {
         font-size: 2rem;
     }
     
+    .beer-logo {
+        max-height: 80px;
+    }
+    
     .section-padding {
         padding: 50px 0;
     }
@@ -264,11 +352,28 @@ footer {
         height: 200px;
         margin-bottom: 30px;
     }
+    
+    .navbar-brand {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+    
+    .navbar-brand img {
+        height: 30px !important;
+    }
 }
 
 @media (max-width: 576px) {
     .hero-section {
         padding: 60px 0;
+    }
+    
+    .beer-logo {
+        max-height: 60px;
     }
     
     .gallery-item img {

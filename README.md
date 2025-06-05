@@ -148,6 +148,30 @@ Das Kontaktformular ist vorbereitet für:
 
 Eine kleine Hobbybrauerei aus Untervaz, Graubünden, die mit Leidenschaft handwerkliches Bier braut. Von traditionellen Sorten bis zu innovativen Kreationen - jedes Bier wird mit höchster Sorgfalt und Qualität hergestellt.
 
+## Biersorten
+
+Die Brauerei Rappenstein bietet folgende handwerklich gebraute Biere:
+
+1. **Ipschlössli** (5.2% Vol.) - CHF 4.50
+2. **Wolfsblut** (6.0% Vol.) - CHF 5.20
+3. **Märzen** (5.8% Vol.) - CHF 4.80
+4. **Dunggli Wolgga** (5.4% Vol.) - CHF 4.90
+5. **Lager** (4.8% Vol.) - CHF 4.20
+6. **Weizen** (5.2% Vol.) - CHF 4.60
+
+### Angebote
+- **6er Pack Mix**: CHF 26.00 (alle Sorten zum Probieren)
+- **12er Kiste**: CHF 48.00 (eine Sorte nach Wahl)
+
+## Logo-Dateien
+
+Für die vollständige Funktionalität der Website benötigen Sie die folgenden Logo-Dateien im `images/` Verzeichnis:
+
+- `logo-yellow.png` - Gelbes Logo für die Navigation (empfohlene Größe: 200x80px)
+- `logo-white.png` - Weißes Logo für die Hero-Sektion (empfohlene Größe: 300x120px)
+
+Die Logos sollten auf transparentem Hintergrund sein und in PNG-Format vorliegen.
+
 ---
 
 *Für Fragen und Support kontaktieren Sie uns unter info@rappenstein.ch* 
