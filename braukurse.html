@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braukurse - Brauerei Rappenstein</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-beer fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="images/brewery/brs_logo_sw.jpg" alt="Brauerei Rappenstein" height="40" class="me-2">
+                Brauerei Rappenstein
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ueber-uns.html">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sortiment.html">Sortiment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schankwagen.html">Schankwagen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rampenverkauf.html">Rampenverkauf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="braukurse.html">Braukurse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="section-padding" style="margin-top: 80px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 text-beer mb-4">Braukurse</h1>
+                    <p class="lead mb-4">Lernen Sie das Brauhandwerk von erfahrenen Braumeistern</p>
+                    <p class="fs-5">Tauchen Sie ein in die faszinierende Welt des Brauens und brauen Sie Ihr eigenes Bier unter professioneller Anleitung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kursübersicht Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 text-beer">Unsere Kurse</h2>
+            <div class="row g-4">
+                <!-- Einsteiger Braukurs -->
+                <div class="col-lg-6">
+                    <div class="card beer-card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-mortarboard-fill me-3" style="font-size: 2.5rem; color: var(--accent-gold);"></i>
+                                <div>
+                                    <h4 class="card-title text-beer mb-1">Einsteiger Braukurs</h4>
+                                    <span class="badge badge-custom bg-success">Beliebt</span>
+                                </div>
+                            </div>
+                            <p class="card-text mb-4">
+                                Perfekt für Anfänger! Lernen Sie die Grundlagen des Brauens kennen und brauen Sie Ihr erstes eigenes Bier. 
+                                Inklusive aller Zutaten und Material.
+                            </p>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Dauer</small>
+                                    <div class="fw-bold">6 Stunden</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Max. Teilnehmer</small>
+                                    <div class="fw-bold">8 Personen</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Mitnahme</small>
+                                    <div class="fw-bold">20 Flaschen</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Verpflegung</small>
+                                    <div class="fw-bold">Inklusive</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price-tag">CHF 180</div>
+                                <a href="#buchung" class="btn btn-beer">Buchen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fortgeschrittenen Kurs -->
+                <div class="col-lg-6">
+                    <div class="card beer-card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-award-fill me-3" style="font-size: 2.5rem; color: var(--accent-gold);"></i>
+                                <div>
+                                    <h4 class="card-title text-beer mb-1">Fortgeschrittenen Kurs</h4>
+                                    <span class="badge badge-custom bg-primary">Intensiv</span>
+                                </div>
+                            </div>
+                            <p class="card-text mb-4">
+                                Für Brauer mit Vorerfahrung. Vertiefen Sie Ihr Wissen über Hopfensorten, Malze und spezielle Brautechniken. 
+                                Experimentieren Sie mit eigenen Rezepten.
+                            </p>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Dauer</small>
+                                    <div class="fw-bold">8 Stunden</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Max. Teilnehmer</small>
+                                    <div class="fw-bold">6 Personen</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Mitnahme</small>
+                                    <div class="fw-bold">30 Flaschen</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Vorerfahrung</small>
+                                    <div class="fw-bold">Erforderlich</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price-tag">CHF 280</div>
+                                <a href="#buchung" class="btn btn-beer">Buchen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Firmen Workshop -->
+                <div class="col-lg-6">
+                    <div class="card beer-card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-building-fill me-3" style="font-size: 2.5rem; color: var(--accent-gold);"></i>
+                                <div>
+                                    <h4 class="card-title text-beer mb-1">Firmen Workshop</h4>
+                                    <span class="badge badge-custom bg-warning text-dark">Team-Event</span>
+                                </div>
+                            </div>
+                            <p class="card-text mb-4">
+                                Perfektes Teamevent für Unternehmen. Stärken Sie den Teamgeist beim gemeinsamen Brauen. 
+                                Individuell anpassbar an Ihre Bedürfnisse.
+                            </p>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Dauer</small>
+                                    <div class="fw-bold">4-8 Stunden</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Gruppengröße</small>
+                                    <div class="fw-bold">8-20 Personen</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Catering</small>
+                                    <div class="fw-bold">Optional</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Termin</small>
+                                    <div class="fw-bold">Nach Vereinbarung</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price-tag">Ab CHF 150</div>
+                                <a href="#buchung" class="btn btn-beer">Anfragen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privatbrauer Kurs -->
+                <div class="col-lg-6">
+                    <div class="card beer-card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-person-fill me-3" style="font-size: 2.5rem; color: var(--accent-gold);"></i>
+                                <div>
+                                    <h4 class="card-title text-beer mb-1">Privatbrauer Kurs</h4>
+                                    <span class="badge badge-custom bg-info">Exklusiv</span>
+                                </div>
+                            </div>
+                            <p class="card-text mb-4">
+                                Individueller Einzelkurs oder für kleine Gruppen bis 4 Personen. 
+                                Maßgeschneidert auf Ihre Wünsche und Ihr Niveau.
+                            </p>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Dauer</small>
+                                    <div class="fw-bold">Flexibel</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Teilnehmer</small>
+                                    <div class="fw-bold">1-4 Personen</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Betreuung</small>
+                                    <div class="fw-bold">1:1 intensiv</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Rezept</small>
+                                    <div class="fw-bold">Nach Wunsch</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price-tag">CHF 320</div>
+                                <a href="#buchung" class="btn btn-beer">Anfragen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Was erwartet Sie Section -->
+    <section class="section-padding" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <h2 class="text-center mb-5 text-beer">Was erwartet Sie?</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-check-circle-fill" style="font-size: 2rem; color: var(--accent-gold);"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-beer">Theorie & Praxis</h5>
+                                    <p>Umfassende Einführung in die Brautheorie gefolgt von praktischer Umsetzung in unserer Brauerei.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-check-circle-fill" style="font-size: 2rem; color: var(--accent-gold);"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-beer">Professionelle Ausstattung</h5>
+                                    <p>Brauen Sie mit professioneller Brauanlage und lernen Sie moderne Brautechniken kennen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-check-circle-fill" style="font-size: 2rem; color: var(--accent-gold);"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-beer">Verkostung</h5>
+                                    <p>Probieren Sie verschiedene Bierstile und lernen Sie die Unterschiede kennen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-check-circle-fill" style="font-size: 2rem; color: var(--accent-gold);"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-beer">Mitnahme-Bier</h5>
+                                    <p>Nehmen Sie Ihr selbst gebrautes Bier mit nach Hause - fertig abgefüllt und etikettiert.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-check-circle-fill" style="font-size: 2rem; color: var(--accent-gold);"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-beer">Zertifikat</h5>
+                                    <p>Erhalten Sie ein Teilnahmezertifikat als Nachweis Ihrer erworbenen Braukenntnisse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="bi bi-check-circle-fill" style="font-size: 2rem; color: var(--accent-gold);"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="text-beer">Nachbetreuung</h5>
+                                    <p>Unterstützung auch nach dem Kurs bei Fragen zum Heimbrauen.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Termine Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 text-beer">Aktuelle Termine</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card beer-card border-0 shadow">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Kurs</th>
+                                            <th>Zeit</th>
+                                            <th>Verfügbarkeit</th>
+                                            <th>Aktion</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>15. März 2024</strong></td>
+                                            <td>Einsteiger Braukurs</td>
+                                            <td>09:00 - 15:00</td>
+                                            <td><span class="badge bg-success">5 Plätze frei</span></td>
+                                            <td><a href="#buchung" class="btn btn-sm btn-beer">Buchen</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>22. März 2024</strong></td>
+                                            <td>Fortgeschrittenen Kurs</td>
+                                            <td>08:00 - 16:00</td>
+                                            <td><span class="badge bg-warning text-dark">2 Plätze frei</span></td>
+                                            <td><a href="#buchung" class="btn btn-sm btn-beer">Buchen</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>29. März 2024</strong></td>
+                                            <td>Einsteiger Braukurs</td>
+                                            <td>09:00 - 15:00</td>
+                                            <td><span class="badge bg-success">8 Plätze frei</span></td>
+                                            <td><a href="#buchung" class="btn btn-sm btn-beer">Buchen</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>05. April 2024</strong></td>
+                                            <td>Einsteiger Braukurs</td>
+                                            <td>09:00 - 15:00</td>
+                                            <td><span class="badge bg-danger">Ausgebucht</span></td>
+                                            <td><a href="#buchung" class="btn btn-sm btn-outline-secondary disabled">Warteliste</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-center mt-4">
+                                <p class="text-muted">Weitere Termine auf Anfrage. Firmen- und Privatbuchungen ganzjährig möglich.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buchungsformular Section -->
+    <section id="buchung" class="section-padding" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <h2 class="text-center mb-5 text-beer">Kurs buchen</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card beer-card border-0 shadow">
+                        <div class="card-body">
+                            <form id="courseBookingForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">Vorname *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Nachname *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">E-Mail *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Telefon *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="courseType" class="form-label">Kurstyp *</label>
+                                        <select class="form-select" id="courseType" required>
+                                            <option value="">Bitte wählen...</option>
+                                            <option value="einsteiger">Einsteiger Braukurs</option>
+                                            <option value="fortgeschritten">Fortgeschrittenen Kurs</option>
+                                            <option value="firmen">Firmen Workshop</option>
+                                            <option value="privat">Privatbrauer Kurs</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="courseDate" class="form-label">Wunschtermin</label>
+                                        <input type="date" class="form-control" id="courseDate">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="participants" class="form-label">Anzahl Teilnehmer</label>
+                                    <select class="form-select" id="participants">
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 Personen</option>
+                                        <option value="3">3 Personen</option>
+                                        <option value="4">4 Personen</option>
+                                        <option value="mehr">Mehr als 4 Personen</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="experience" class="form-label">Brauerfahrung</label>
+                                    <select class="form-select" id="experience">
+                                        <option value="keine">Keine Vorerfahrung</option>
+                                        <option value="wenig">Wenig Erfahrung</option>
+                                        <option value="hobby">Hobby-Brauer</option>
+                                        <option value="fortgeschritten">Fortgeschritten</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="specialWishes" class="form-label">Besondere Wünsche / Anmerkungen</label>
+                                    <textarea class="form-control" id="specialWishes" rows="3" placeholder="Allergien, spezielle Bierstile, Gruppenwünsche..."></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacy" required>
+                                    <label class="form-check-label" for="privacy">
+                                        Ich stimme der Verarbeitung meiner Daten zu und habe die <a href="#" class="text-decoration-none">AGB</a> gelesen. *
+                                    </label>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Ich möchte über neue Kurstermine informiert werden.
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-beer btn-lg">
+                                        <i class="bi bi-calendar-check me-2"></i>Kurs buchen
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 text-beer">Häufige Fragen</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Benötige ich Vorerfahrung für den Einsteiger-Kurs?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nein, für den Einsteiger-Kurs sind keine Vorkenntnisse erforderlich. 
+                                    Wir führen Sie Schritt für Schritt durch den gesamten Brauprozess.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Kann ich mein Bier sofort mitnehmen?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Das Bier muss noch gären und reifen. Sie können es nach ca. 4-6 Wochen abholen 
+                                    oder wir senden es Ihnen zu (gegen Aufpreis).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Ist Verpflegung im Kurspreis enthalten?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ja, Getränke (inkl. Bierverkostung) und ein warmes Mittagessen sind im Preis enthalten.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Kann ich einen Kurs verschenken?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ja, gerne! Wir stellen Geschenkgutscheine aus, die 12 Monate gültig sind. 
+                                    Kontaktieren Sie uns für weitere Details.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Brauerei Rappenstein</h5>
+                    <p class="mb-0">Qualität aus Tradition</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 Brauerei Rappenstein. Alle Rechte vorbehalten.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <!-- Course Booking Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const courseBookingForm = document.getElementById('courseBookingForm');
+
+            courseBookingForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic form validation
+                const required = this.querySelectorAll('[required]');
+                let isValid = true;
+                
+                required.forEach(field => {
+                    if (!field.value.trim()) {
+                        field.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        field.classList.remove('is-invalid');
+                        field.classList.add('is-valid');
+                    }
+                });
+                
+                if (isValid) {
+                    // Simulate form submission
+                    alert('Vielen Dank für Ihre Kursbuchung! Wir werden uns in Kürze bei Ihnen melden, um die Details zu besprechen.');
+                    this.reset();
+                    document.querySelectorAll('.is-valid').forEach(field => {
+                        field.classList.remove('is-valid');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
